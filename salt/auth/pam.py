@@ -1,5 +1,5 @@
 # The pam components have been modified to be salty and have been taken from
-# the pam module under this licence:
+# the pam module under this license:
 # (c) 2007 Chris AtLee <chris@atlee.ca>
 # Licensed under the MIT license:
 # http://www.opensource.org/licenses/mit-license.php
