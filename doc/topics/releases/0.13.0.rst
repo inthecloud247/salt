@@ -9,8 +9,8 @@ arrived!
 Major Features
 ==============
 
-Improved file.recuse Performance
---------------------------------
+Improved file.recurse Performance
+---------------------------------
 
 The file.recurse system has been deployed and used in a vast array of
 situations. Fixes to the file state and module have led towards opening up
@@ -62,6 +62,21 @@ drop to a shell prompt, this caused confusion with users who expected the
 remote executions to also quit. Now a message is displayed showing what
 command can be used to track the execution and what the job id is for the
 execution.
+
+Version Specification in Muliple-Package States
+-----------------------------------------------
+
+Versions can now be specified within multiple-package :mod:`pkg.installed
+<salt.states.pkg.installed>` states. An example can be found below:
+
+.. code-block:: yaml
+
+    mypkgs:
+      pkg.installed:
+        - pkgs:
+          - foo
+          - bar: 1.2.3-4
+          - baz
 
 Noteworthy Changes
 ==================
